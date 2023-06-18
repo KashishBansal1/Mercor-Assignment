@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { dummyProjects } from "../../dummyData";
 import { Bullet } from "../../assets/icons/Bullet";
@@ -8,8 +8,8 @@ import { Menu1 } from "../../assets/icons/Menu1";
 import styles from "./MyProjects.module.css";
 
 export default function MyProjects() {
-  const [projects, setProjects] = useState(dummyProjects);
-  const [currentProject, setCurrentProject] = useState(dummyProjects[0]);
+  const projects = dummyProjects;
+  const currentProject = dummyProjects[0];
 
   return (
     <div>
